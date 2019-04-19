@@ -17,7 +17,7 @@
         <div class="top-bar-left">
           <ul class="menu">
             <li>
-              <a id="search" href="#"><ion-icon name="ios-search"></ion-icon></a>
+              <a id="search" href="javascript:void(0);" onclick="openSearch()"><ion-icon name="ios-search"></ion-icon></a>
             </li>
           </ul>
         </div>

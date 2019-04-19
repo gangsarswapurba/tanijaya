@@ -40,6 +40,16 @@
       </div>
     </div><!-- .footer -->
 
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><ion-icon name="close-circle-outline"></ion-icon></span>
+      <div class="overlay-content">
+        <form action="javascript:void(0);">
+          <input type="text" placeholder="CARI PRODUK" name="search">
+          <button type="submit"><ion-icon name="ios-search"></ion-icon></button>
+        </form>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="<?php echo base_url(); ?>asset/js/vendor/jquery.js"></script>
     <script src="<?php echo base_url(); ?>asset/js/vendor/what-input.js"></script>

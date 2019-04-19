@@ -355,3 +355,74 @@ line-height: 26px;
 body.cart .top-bar{
   box-shadow: 0 6px 9px 0 rgba(0, 0, 0, .12);
 }
+
+/* The overlay effect with black background */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+}
+
+/* The content */
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+/* Close button */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 32px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.overlay .closebtn:hover {
+
+}
+
+/* Style the search field */
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+    margin-bottom: 0;
+    height: 48px;
+    background: #f1f1f1;
+    /* border-radius: 14px 0 0 14px; */
+}
+
+.overlay input[type=text]:focus {
+  box-shadow: none;
+}
+
+/* Style the submit button */
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #000000;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(50, 54, 72, .5)
+    /* border-radius: 0 12px 12px 0; */
+}
+
+.overlay button ion-icon {
+  color: #FFFFFF;
+}
