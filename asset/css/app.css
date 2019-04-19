@@ -1,0 +1,357 @@
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+a {
+    color: #000000;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-style: italic;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-style: italic;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-style: italic;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+
+   opacity: 1;
+
+}
+
+.button {
+    font-family: 'Muli';
+}
+
+.top-bar, .top-bar ul {
+    background-color: #ffffff;
+}
+
+
+.topbar-center-logo .top-bar-center {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-center-logo .top-bar-center {
+    display: none;
+  }
+}
+
+.topbar-center-logo-mobile {
+  background: #2c3840;
+}
+
+.topbar-center-logo-mobile .menu-icon {
+  vertical-align: text-top;
+}
+
+
+
+#header-logo {
+    height: 66px;
+}
+
+.favorit .foto {
+    height: 66px;
+}
+
+.favorit .detail {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Muli-Regular;
+    font-size: 11px;
+    color: #230B05;
+    letter-spacing: -0.34px;
+}
+
+.produk-favorit {
+    background-color: #F8F7F5;
+}
+
+.vertical-line {
+    height: 128px;
+}
+
+.vertical-line .line {
+    height: 64px;
+    border-right: 2px solid #DACAAD;
+}
+
+.contact {
+    height: 408px;
+    background-color: #F8F7F5;
+}
+
+.lambang-tanya > ion-icon {
+    color: #A9855B;
+    font-size: 100px;
+    font-weight: 100;
+}
+
+.contact {
+    padding-top: 57px;
+}
+
+.wa {
+    font-family: 'Muli';
+    margin-top: 38px;
+    margin-bottom: 81px;
+}
+
+.wa .button {
+    box-shadow: 0 2px 4px 0 rgba(50,54,72,0.50);
+    background: #25D366;
+    font-size: 18px;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 18px;
+    padding: 21px 42px;
+}
+
+.wa .button:hover {
+  background: #25D366;
+}
+
+.wa ion-icon {
+    vertical-align: bottom;
+}
+
+.footer {
+  font-family: 'Muli';
+    background-color: #F3EFEC;
+    padding-top: 177px;
+    padding-bottom: 186px;
+    padding-left: 147px;
+    padding-right: 147px;
+}
+
+.produk .foto-utama {
+    width: 340px;
+}
+
+.produk .separator {
+    height: 1px;
+    border-bottom: 1px solid #DACAAD;
+    width: 64px;
+}
+
+.foto-thumb img {
+    height: 66px;
+}
+
+.harga, .deskripsi-title, .deskripsi {
+    font-family: 'Muli';
+}
+
+.qty > label {
+    display: inline-block;
+}
+
+#qty-stepper {
+    width: 100px;
+    display: inline-block;
+}
+
+.pencarian input.input-group-field {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    box-shadow: none;
+}
+
+.pencarian input.input-group-field:focus {
+    box-shadow: none;
+    border-bottom-color: #cacaca;
+}
+
+.pencarian .button {
+    background: none;
+    color: rgb(202, 202, 202);
+    font-size: 20px;
+}
+
+.top-bar #cart, .top-bar #search {
+    font-size: 30px;
+    color: #000000;
+}
+
+.favorit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.orbit {
+    margin-bottom: 40px;
+}
+
+.daftar-kategori-produk {
+    margin-top: 120px;
+}
+
+.kategori-produk {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.kategori-produk .text h3 {
+    font-size: 75px;
+    color: #A9855B;
+}
+
+.kategori-produk .button {
+    background: #A9855B;
+    font-family: Muli-Bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 18px;
+    box-shadow: 0 2px 4px 0 rgba(50, 54, 72, .5);
+    padding: 20px 53px;
+}
+
+.kategori-produk .button:hover, .kategori-produk .button:focus {
+    background-color: #A9855B;
+}
+
+.kategori-produk .cell {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.tanya-langsung-text {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+#footer {
+    margin-top: 80px;
+}
+
+.footer {
+    font-size: 13px;
+    color: #0F0F0F;
+}
+
+.media-sosial span {
+    color: #7F7F7F;
+    margin-right: 8px;
+}
+
+.media-sosial a {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 8px 6px;
+}
+
+.media-sosial ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+}
+
+.halaman-cart .top-bar {
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, .12);
+}
+
+.grid-container.cart {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.grid-container.cart h2 {
+    margin-bottom: 36px;
+}
+
+.grid-container .item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid #E9E7E4;
+    border-bottom: 1px solid #E9E7E4;
+    display: flex;
+    align-items: center;
+}
+
+.produk {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.produk .kota {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.produk .nama {
+    font-size: 65px;
+    line-height: 65px;
+}
+
+.produk .satuan {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.produk .harga-lama {
+    font-size: 12px;
+    font-family: 'Muli';
+    text-decoration: line-through;
+    color: #999999;
+    line-height: 12px;
+}
+
+.produk .harga {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Muli';
+    color: #D71149;
+    line-height: 24px;
+}
+
+.beli.button {
+  background: #42B549;
+  font-family: Muli-Bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 18px;
+  padding: 20px 106px;
+  box-shadow: 0 2px 4px 0 rgba(50, 54, 72, .5);
+}
+
+.beli.button:hover {
+  background: #42B549;
+}
+
+  .produk .deskripsi-title {
+    font-family: Muli-Bold;
+  font-size: 12px;
+  color: #787878;
+  line-height: 12px;
+  margin-top: 26px;
+}
+
+.produk .deskripsi {
+  font-family: Muli-Regular;
+font-size: 12px;
+color: #787878;
+line-height: 26px;
+}
+
+body.cart .top-bar{
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, .12);
+}

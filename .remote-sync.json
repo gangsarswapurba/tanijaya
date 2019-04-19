@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "transport": "ftp",
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "tanijaya.innaweb.com",
+  "port": "21",
+  "target": "/",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "timtam@tanijaya.innaweb.com",
+  "password": "timtam",
+  "watch": []
+}
