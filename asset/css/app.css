@@ -381,8 +381,8 @@ body.cart .top-bar{
 /* Close button */
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: 24px;
+  right: 24px;
   font-size: 32px;
   cursor: pointer;
   color: #000000;
