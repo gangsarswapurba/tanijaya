@@ -27,7 +27,7 @@
         <div class="top-bar-right">
             <ul class="menu">
               <li>
-                <a id="cart" href="cart.html"><ion-icon name="cart"></ion-icon></a>
+                <a id="cart" href="<?php echo base_url(); ?>cart"><ion-icon name="cart"></ion-icon></a>
               </li>
             </ul>
         </div>
