@@ -32,7 +32,7 @@
           <span class="alamat">jln petung, ruko timur kfc papringan <br />(sebelah indonotebook dan roglasses)</span>
         </div>
         <div class="cell small-12 medium-4 text-center">
-          <a class="" href="."><img id="header-logo" src="<?php echo base_url(); ?>asset/img/logo.png" alt="" /></a>
+          <a class="" href="<?php echo base_url(); ?>"><img id="header-logo" src="<?php echo base_url(); ?>asset/img/logo.png" alt="" /></a>
         </div>
         <div class="cell small-12 medium-4 text-center">
           <span class="media-sosial"><span>Ikuti kami</span> <a href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></span>

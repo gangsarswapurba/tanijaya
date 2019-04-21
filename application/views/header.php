@@ -22,7 +22,7 @@
           </ul>
         </div>
         <div class="top-bar-center">
-          <a class="" href="."><img id="header-logo" src="<?php echo base_url(); ?>asset/img/logo.png" alt="" /></a>
+          <a class="" href="<?php echo base_url(); ?>"><img id="header-logo" src="<?php echo base_url(); ?>asset/img/logo.png" alt="" /></a>
         </div>
         <div class="top-bar-right">
             <ul class="menu">
