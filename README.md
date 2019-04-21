@@ -7,3 +7,4 @@ Tani Jaya E-Commerce Project
 - Mita Oktafani (16121043)
 - Candra Priatama (16121027)
 - Gunartatik Esthiningtyas (16121023)
+- Yusuf Aji Wiryanto (16121052)
