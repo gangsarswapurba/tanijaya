@@ -1,77 +1,29 @@
 <div class="grid-container fluid produk-favorit">
   <div class="grid-x grid-margin-x">
- 
-    <div class="cell small-2 small-offset-1 favorit">
-        <a class="produk-thumb" href="product"><img class="foto" src="<?php echo base_url(); ?>asset/img/product/iconfinder_Apple_56029.png">
-        <div class="detail">
-          <div class="kota">
-            Madura
-          </div>
-          <div class="nama">
-            Apel
-          </div>
-          <div class="harga">
-            Rp150.000/kg
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="cell small-2 favorit">
-      <img class="foto" src="<?php echo base_url(); ?>asset/img/product/iconfinder_Tomato_56019.png">
+
+<?php $i = 0; ?>
+
+<?php foreach ($lima_produk_favorit as $key => $produk): ?>
+  <div class="cell medium-2 <?php echo $i == 0 ? 'medium-offset-1' : ''; ?>  favorit">
+      <a class="produk-thumb" href="<?php echo base_url(); ?>product/index/<?php echo $produk['id']; ?>"><img class="foto" src="<?php echo $produk['foto']; ?>">
       <div class="detail">
         <div class="kota">
-          Bantul
+          <?php echo $produk['kota']; ?>
         </div>
         <div class="nama">
-          Tomat
+          <?php echo $produk['nama']; ?>
         </div>
         <div class="harga">
-          Rp240.000/kg
+          Rp<?php echo number_format($produk['harga']) ?>/<?php echo $produk['per'] == 1 ? '' : $produk['per']; ?><?php echo $produk['satuan']; ?>
         </div>
       </div>
-    </div>
-    <div class="cell small-2 favorit">
-      <img class="foto" src="<?php echo base_url(); ?>asset/img/product/iconfinder_Banana_56018.png">
-      <div class="detail">
-        <div class="kota">
-          Flores
-        </div>
-        <div class="nama">
-          Pisang
-        </div>
-        <div class="harga">
-          Rp370.000/kg
-        </div>
-      </div>
-    </div>
-    <div class="cell small-2 favorit">
-      <img class="foto" src="<?php echo base_url(); ?>asset/img/product/iconfinder_Lemon_56022.png">
-      <div class="detail">
-        <div class="kota">
-          Sleman
-        </div>
-        <div class="nama">
-          Jeruk
-        </div>
-        <div class="harga">
-          Rp129.000/kg
-        </div>
-      </div>
-    </div>
-    <div class="cell small-2 favorit">
-      <img class="foto" src="<?php echo base_url(); ?>asset/img/product/iconfinder_Pear_56020.png">
-      <div class="detail">
-        <div class="kota">
-          Gunung Kidul
-        </div>
-        <div class="nama">
-          Pear
-        </div>
-        <div class="harga">
-          Rp350.000/kg
-        </div>
-      </div>
-    </div>
- 
+    </a>
+  </div>
+
+  <?php $i++; ?>
+<?php endforeach; ?>
+
+
+
   </div>
 </div>
