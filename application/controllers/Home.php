@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
- 
+
 class Home extends CI_Controller {
- 
+
     /**
      * Index Page for this controller.
      *
@@ -20,14 +20,21 @@ class Home extends CI_Controller {
      */
     public function index()
     {
+
+        $this->load->model('Kategori_model');
+        $data['semua_kategori_produk'] = $this->Kategori_model->get_all();
+
+        $this->load->model('Produk_model');
+        $data['lima_produk_favorit'] = $this->Produk_model->get_top_5_product();
+
         $this->load->view('header');
- 
-        $this->load->view('produk-favorit');
- 
+
+        $this->load->view('produk-favorit', $data);
+
         $this->load->view('banner');
- 
-        $this->load->view('kategori-produk');
- 
+
+        $this->load->view('kategori-produk', $data);
+
         $this->load->view('footer');
     }
 }
