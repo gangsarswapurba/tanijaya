@@ -112,7 +112,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 81px;
 }
 
-.wa .button {
+.contact .wa .button {
     box-shadow: 0 2px 4px 0 rgba(50,54,72,0.50);
     background: #25D366;
     font-size: 18px;
@@ -307,6 +307,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .produk .harga-lama {
+  visibility: hidden;
     font-size: 12px;
     font-family: 'Muli';
     text-decoration: line-through;
@@ -352,7 +353,7 @@ color: #787878;
 line-height: 26px;
 }
 
-body.cart .top-bar{
+body.cart .top-bar, body.pencarian .top-bar{
   box-shadow: 0 6px 9px 0 rgba(0, 0, 0, .12);
 }
 
@@ -425,4 +426,26 @@ body.cart .top-bar{
 
 .overlay button ion-icon {
   color: #FFFFFF;
+}
+
+.produk-hasil-pencarian {
+    padding: 16px;
+    font-family: 'Muli';
+    font-size: 14px;
+    font-weight: 400;
+    color: #0F0F0F;
+}
+
+.produk-hasil-pencarian > img, .produk-hasil-pencarian > div {
+    line-height: 14px;
+}
+
+.produk-hasil-pencarian > img {
+    margin-bottom: 16px;
+    max-width: 128px;
+}
+
+.hasil-pencarian {
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
