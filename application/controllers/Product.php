@@ -18,13 +18,20 @@ class Product extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	public function index($id_produk = 1)
 	{
+
+		$this->load->model('Produk_model');
+
+		$data['lima_produk_favorit'] = $this->Produk_model->get_top_5_product();
+
+		$data['produk'] = $this->Produk_model->get_product_detail($id_produk);
+
 		$this->load->view('header');
 
-		$this->load->view('produk-favorit');
+		$this->load->view('produk-favorit', $data);
 
-		$this->load->view('produk');
+		$this->load->view('produk', $data);
 
 		$this->load->view('footer');
 	}
