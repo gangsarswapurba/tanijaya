@@ -8,3 +8,4 @@ Tani Jaya E-Commerce Project
 - Candra Priatama (16121027)
 - Gunartatik Esthiningtyas (16121023)
 - Yusuf Aji Wiryanto (16121052)
+- Arwa Ulayya Haspriyanti (16121025)
