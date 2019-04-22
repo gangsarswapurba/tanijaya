@@ -16,4 +16,16 @@ class Produk_model extends CI_Model {
           return $query->row_array();
         }
  
+        public function cari($value)
+        {
+          // $this->db->group_start();
+          // $value = explode(" ", $value);
+          $this->db->like('nama', $value);
+          $this->db->or_like('kota', $value);
+          $this->db->or_like('deskripsi', $value);
+          // $this->db->group_end();
+          $query = $this->db->get('produk');
+          return $query->result_array();
+        }
+ 
 }
