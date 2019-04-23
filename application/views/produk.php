@@ -11,11 +11,15 @@
         <div class="cell medium-6">
           <div class="harga">
             <span class="harga-lama">Rp7.500.000</span><br />
-            <span class="harga">Rp<?php echo number_format($produk['harga']) ?></span>
+           <span class="harga">Rp<?php echo $this->cart->format_number($produk['harga']) ?></span>
           </div>
         </div>
         <div class="cell medium-6">
-          <a href="<?php echo base_url(); ?>keranjang" class="button primary beli" type="button" name="button">BELI</a>
+          <?php $attributes = 'method="get"'; ?>
+          <?php $hidden = array('product_id' => $produk['id']); ?>
+          <?php echo form_open('keranjang/tambah', $attributes, $hidden); ?>
+              <button class="button primary beli" type="submit" name="submit">BELI</button>
+          <?php echo form_close(); ?>
         </div>
       </div>
       <div class="separator">
