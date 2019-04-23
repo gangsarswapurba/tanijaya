@@ -23,7 +23,5 @@
   <?php $i++; ?>
 <?php endforeach; ?>
 
-
-
   </div>
 </div>

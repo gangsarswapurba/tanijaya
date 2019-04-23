@@ -464,6 +464,7 @@ body.keranjang .top-bar, body.pencarian .top-bar, .grid-container.produk-favorit
     font-family: 'Muli';
 }
 
+<<<<<<< Updated upstream
 td.foto > a > img {
     height: 66px;
 }
@@ -534,4 +535,58 @@ span.qty-text {
   text-align: center;
   line-height: 18px;
   box-shadow: 0 2px 4px 0 rgba(50,54,72,0.50);
+}
+
+.show-produks{
+    width: 100%;
+    justify-content: center;
+}
+
+.show-produks > div{
+    width: 100%;
+    padding: 1rem;
+    border: solid 1px #fff;
+    border-radius: 10px;
+}
+
+.show-produks > div:hover{
+    overflow: hidden;
+    border: solid 1px #6ab83a86;
+}
+
+.show-produks p{
+    margin: 0;
+}
+
+
+.show-produks p:nth-child(2){
+    font-weight: 700;
+    color: rgb(31, 31, 31);
+}
+
+.show-produks a:hover {
+    color: rgb(0, 0, 0);
+    
+}
+
+.d-flex{
+    display: flex;
+}
+
+.m-1{
+    margin: 1rem;
+}
+
+.m-l-r{
+    margin: 0 2rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.fruit-container{
+    max-width: 850px;
+    margin: 0 auto;
+
 }

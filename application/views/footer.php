@@ -8,6 +8,12 @@
     </div>
   </div>
 
+  <div style="text-align: center;">
+    <button class="button primary" onclick="window.location.replace('<?php  echo base_url(); ?>produkIn_kategori/tampil_produk');">Klik Kategori</button>
+  </div>
+  
+ 
+
 <div class="grid-container contact">
     <div class="grid-x">
       <div class="cell small-12">
