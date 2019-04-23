@@ -26,4 +26,39 @@ class Keranjang extends CI_Controller {
 
         $this->load->view('footer');
     }
+
+public function tambah()
+    {
+
+      $product_id =  $this->input->get('product_id');
+
+      $this->load->model('Produk_model');
+      $product_detail = $this->Produk_model->get_product_detail($product_id);
+
+      $data = array(
+              'id'         => $product_id,
+              'qty'      =>  1,
+              'price'   => $product_detail['harga'],
+              'name'  => $product_detail['nama'],
+              'kota'    => $product_detail['kota'],
+              'per'     => $product_detail['per'],
+              'satuan' => $product_detail['satuan'],
+              'foto'    => $product_detail['foto']
+      );
+
+      $this->cart->insert($data);
+
+      // $this->cart->destroy();
+
+      redirect('/keranjang');
+
+    }
+
+    public function keluarkan($row_id)
+    {
+
+      $this->cart->remove($row_id);
+
+      redirect('/keranjang');
+    }
 }
