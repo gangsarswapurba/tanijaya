@@ -358,7 +358,7 @@ color: #787878;
 line-height: 26px;
 }
 
-body.cart .top-bar, body.pencarian .top-bar{
+body.keranjang .top-bar, body.pencarian .top-bar{
   box-shadow: 0 6px 9px 0 rgba(0, 0, 0, .12);
 }
 
