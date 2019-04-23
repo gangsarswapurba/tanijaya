@@ -4,7 +4,7 @@
 <?php $i = 0; ?>
 
 <?php foreach ($lima_produk_favorit as $key => $produk): ?>
-  <div class="cell medium-2 <?php echo $i == 0 ? 'medium-offset-1' : ''; ?>  favorit">
+  <div class="cell medium-2 <?php echo $i == 0 ? 'medium-offset-1' : ''; ?> favorit">
       <a class="produk-thumb" href="<?php echo base_url(); ?>produk/index/<?php echo $produk['id']; ?>"><img class="foto" src="<?php echo $produk['foto']; ?>">
       <div class="detail">
         <div class="kota">
