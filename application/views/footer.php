@@ -43,11 +43,12 @@
     <div id="myOverlay" class="overlay">
       <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><ion-icon name="close-circle-outline"></ion-icon></span>
       <div class="overlay-content">
-        <?php echo form_open('pencarian'); ?>
+        <?php $attributes = 'method="get"'; ?>
+        <?php echo form_open('pencarian/index', $attributes); ?>
           <!-- <input type="text" placeholder="CARI PRODUK" name="pencarian"> -->
           <?php
           $data = array(
-                  'name'              => 'yang_dicari',
+                  'name'              => 'keyword',
                   'id'                     => 'kolom_pencarian',
                   // 'value'               => 'johndoe',
                   // 'maxlength'     => '100',
@@ -58,7 +59,7 @@
            ?>
           <?php echo form_input($data); ?>
           <button type="submit"><ion-icon name="ios-search"></ion-icon></button>
-        </form>
+        <?php echo form_close(); ?>
       </div>
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>

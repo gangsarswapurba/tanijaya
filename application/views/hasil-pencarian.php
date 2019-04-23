@@ -9,7 +9,7 @@
         <img src="<?php echo $produk['foto']; ?>" alt="<?php echo $produk['nama'] ?> <?php echo $produk['kota'] ?>">
         <div class="kota"><?php echo $produk['kota']; ?></div>
         <div class="nama"><?php echo $produk['nama']; ?></div>
-        <div class="harga">Rp<?php echo number_format($produk['harga']); ?>/<?php $produk['per'] == 1 ? '' : $produk['per']; ?></div>
+        <div class="harga">Rp<?php echo number_format($produk['harga']); ?>/<?php echo $produk['per'] == 1 ? '' : $produk['per']; ?><?php echo $produk['satuan'] ?></div>
       </div>
       </a>
     <?php endforeach; ?>

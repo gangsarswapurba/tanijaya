@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
- 
+
 class Pencarian extends CI_Controller {
- 
+
     /**
      * Index Page for this controller.
      *
@@ -20,19 +20,21 @@ class Pencarian extends CI_Controller {
      */
     public function index()
     {
- 
-        $yang_dicari = $this->input->post('yang_dicari');
- 
+
+        $yang_dicari = $this->input->get('keyword');
+
+        $yang_dicari = html_escape($yang_dicari);
+
         $data['yang_dicari'] = $yang_dicari;
- 
+
         $this->load->model('Produk_model');
- 
+
         $data['hasil_pencarian'] = $this->Produk_model->cari($yang_dicari);
- 
+
         $this->load->view('header');
- 
+
         $this->load->view('hasil-pencarian', $data);
- 
+
         $this->load->view('footer');
     }
 }
