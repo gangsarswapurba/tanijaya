@@ -463,3 +463,75 @@ body.keranjang .top-bar, body.pencarian .top-bar, .grid-container.produk-favorit
 .not-found h4 {
     font-family: 'Muli';
 }
+
+td.foto > a > img {
+    height: 66px;
+}
+
+td.qty input {
+    width: 56px;
+}
+
+td.qty > span, td.qty > input {
+    display: inline-block;
+}
+
+.cart table {
+  font-family: 'Muli'
+}
+
+.cart table tbody tr td {
+    vertical-align: baseline;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.cart table tbody {
+  border: none;
+}
+
+.cart table tr {
+    border-top: 1px solid #E9E7E4;
+}
+
+.cart table tr:last-child {
+
+  border-bottom: 1px solid #E9E7E4;
+}
+
+span.qty-text {
+    font-family: 'Playfair Display';
+    font-size: 14px;
+}
+
+.keluarkan a:hover {
+    color: #000000;
+}
+
+#cart-notif {
+    position: absolute;
+    right: .5rem;
+    background: #FFC53E;
+    border-radius: 50%;
+    padding: 0px 9px 2px 8px;
+    z-index: 11;
+}
+
+#cart-notif span {
+    font-size: 11px;
+    font-family: 'Muli';
+}
+
+.hitung-total {
+  margin-top: 40px;
+}
+
+.hitung-total button.primary, .hitung-total button.primary:hover, .hitung-total button.primary:active, .hitung-total button.primary:focus {
+  background: #42B549;
+  font-family: Muli-Bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 18px;
+  box-shadow: 0 2px 4px 0 rgba(50,54,72,0.50);
+}
