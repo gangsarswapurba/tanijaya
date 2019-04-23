@@ -14,9 +14,10 @@
           <?php echo $produk['nama']; ?>
         </div>
         <div class="harga">
-          Rp<?php echo number_format($produk['harga']) ?>/<?php echo $produk['per'] == 1 ? '' : $produk['per']; ?><?php echo $produk['satuan']; ?>
-        </div>
-      </div>
+         Rp<?php echo $this->cart->format_number($produk['harga']) ?>/<?php echo $produk['per'] == 1 ? '' : $produk['per']; ?><?php echo $produk['satuan']; ?>
+      
+				</div>
+				</div>
     </a>
   </div>
 
