@@ -43,18 +43,29 @@
     <div id="myOverlay" class="overlay">
       <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><ion-icon name="close-circle-outline"></ion-icon></span>
       <div class="overlay-content">
-        <form action="javascript:void(0);">
-          <input type="text" placeholder="CARI PRODUK" name="search">
+        <?php echo form_open('pencarian'); ?>
+          <!-- <input type="text" placeholder="CARI PRODUK" name="pencarian"> -->
+          <?php
+          $data = array(
+                  'name'              => 'yang_dicari',
+                  'id'                     => 'kolom_pencarian',
+                  // 'value'               => 'johndoe',
+                  // 'maxlength'     => '100',
+                  // 'size'                 => '50',
+                  // 'style'               => 'width:50%',
+                  'placeholder'         => 'contoh: jeruk, apel, madura, sleman'
+          );
+           ?>
+          <?php echo form_input($data); ?>
           <button type="submit"><ion-icon name="ios-search"></ion-icon></button>
         </form>
       </div>
-    </div>
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="<?php echo base_url(); ?>asset/js/vendor/jquery.js"></script>
     <script src="<?php echo base_url(); ?>asset/js/vendor/what-input.js"></script>
     <script src="<?php echo base_url(); ?>asset/js/vendor/foundation.js"></script>
-    <script src="<?php echo base_url(); ?>asset/js/app.js"></script>
+    <script src="<?php echo base_url(); ?>asset/js/app.js?as"></script>
     <script>
         $(document).foundation();
     </script>
