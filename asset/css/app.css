@@ -464,7 +464,7 @@ body.keranjang .top-bar, body.pencarian .top-bar, .grid-container.produk-favorit
     font-family: 'Muli';
 }
 
-<<<<<<< Updated upstream
+
 td.foto > a > img {
     height: 66px;
 }
@@ -539,11 +539,10 @@ span.qty-text {
 
 .show-produks{
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .show-produks > div{
-    width: 100%;
     padding: 1rem;
     border: solid 1px #fff;
     border-radius: 10px;
@@ -586,7 +585,7 @@ span.qty-text {
 }
 
 .fruit-container{
-    max-width: 850px;
+    max-width: 910px;
     margin: 0 auto;
 
 }
