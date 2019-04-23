@@ -27,6 +27,11 @@
         <div class="top-bar-right">
             <ul class="menu">
               <li>
+                <?php if ($this->cart->total_items() > 0): ?>
+                  <div id="cart-notif">
+                    <span><?php echo $this->cart->total_items(); ?></span>
+                  </div>
+                <?php endif; ?>
                 <a id="cart" href="<?php echo base_url(); ?>keranjang"><ion-icon name="cart"></ion-icon></a>
               </li>
             </ul>
