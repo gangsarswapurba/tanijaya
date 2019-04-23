@@ -455,3 +455,11 @@ body.keranjang .top-bar, body.pencarian .top-bar, .grid-container.produk-favorit
     margin-top: 80px;
     margin-bottom: 80px;
 }
+
+.not-found {
+    margin-top: 80px;
+}
+
+.not-found h4 {
+    font-family: 'Muli';
+}
