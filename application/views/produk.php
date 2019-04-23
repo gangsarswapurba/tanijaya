@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="cell medium-6">
-          <a href="<?php echo base_url(); ?>cart" class="button primary beli" type="button" name="button">BELI</a>
+          <a href="<?php echo base_url(); ?>keranjang" class="button primary beli" type="button" name="button">BELI</a>
         </div>
       </div>
       <div class="separator">
