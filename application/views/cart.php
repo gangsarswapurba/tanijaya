@@ -13,7 +13,7 @@
         <?php echo form_hidden($i.'[rowid]', $items['rowid']); ?>
 
         <tr>
-                <td class="foto"><a href="<?php echo base_url(); ?>produk/index/<?php echo $items['id']; ?>"><img src="<?php echo $items['foto'] ?>" alt=""></a></td>
+                <td class="foto"><a href="<?php echo base_url(); ?>produk/index/<?php echo $items['id']; ?>"><img src="<?php echo base_url(); ?>assets/img/product/<?php echo $items['foto'] ?>" alt=""></a></td>
                 <td class="nama">
                         <?php echo $items['name'] . ' ' . $items['kota'] . ' (' . $items['per'] . $items['satuan'] . ')'; ?>
 

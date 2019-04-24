@@ -12,7 +12,7 @@
 <?php if ( $kiri ): ?>
   <div class="grid-x kategori-produk kiri">
     <div class="cell medium-6">
-      <img class="foto" src="<?php echo $kategori_produk['foto']; ?>" />
+      <img class="foto" src="<?php echo base_url() ?>assets/img/kategori/<?php echo $kategori_produk['foto']; ?>" />
     </div>
     <div class="cell medium-6">
       <div class="text">
@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="cell medium-6">
-      <img class="foto" src="<?php echo $kategori_produk['foto']; ?>" />
+      <img class="foto" src="<?php echo base_url() ?>assets/img/kategori/<?php echo $kategori_produk['foto']; ?>" />
     </div>
   </div>
 <?php endif; ?>
