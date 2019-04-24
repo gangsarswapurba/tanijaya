@@ -8,7 +8,7 @@
     <div class="d-flex show-produks">
         <div class="m-1 m-l-r">
             <a href="">
-                <img src="<?php echo base_url(); ?>asset/img/product/iconfinder_Apple_56029.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/img/product/iconfinder_Apple_56029.png" alt="">
                 <div class="text-center">
                     <p>Medium</p>
                     <p>Apel</p>
@@ -19,7 +19,7 @@
 
         <div class="m-1 m-l-r">
             <a href="">
-                <img src="<?php echo base_url(); ?>asset/img/product/iconfinder_Banana_56018.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/img/product/iconfinder_Banana_56018.png" alt="">
                 <div class="text-center">
                     <p>Medium</p>
                     <p>Pisang</p>
@@ -30,7 +30,7 @@
 
         <div class="m-1 m-l-r">
             <a href="">
-                <img src="<?php echo base_url(); ?>asset/img/product/iconfinder_Lemon_56022.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/img/product/iconfinder_Lemon_56022.png" alt="">
                 <div class="text-center">
                     <p>Medium</p>
                     <p>Lemon</p>
@@ -41,7 +41,7 @@
 
         <div class="m-1 m-l-r">
             <a href="">
-                <img src="<?php echo base_url(); ?>asset/img/product/iconfinder_Tomato_56019.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/img/product/iconfinder_Tomato_56019.png" alt="">
                 <div class="text-center">
                     <p>Medium</p>
                     <p>Tomat</p>
@@ -54,7 +54,7 @@
     <div class="d-flex show-produks">
         <div class="m-1 m-l-r">
             <a href="">
-                <img src="<?php echo base_url(); ?>asset/img/product/iconfinder_Strawberry_56028.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/img/product/iconfinder_Strawberry_56028.png" alt="">
                 <div class="text-center">
                     <p>Medium</p>
                     <p>Strawbery</p>
@@ -65,7 +65,7 @@
 
         <div class="m-1 m-l-r">
             <a href="">
-                <img src="<?php echo base_url(); ?>asset/img/product/iconfinder_Pear_56020.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/img/product/iconfinder_Pear_56020.png" alt="">
                 <div class="text-center">
                     <p>Medium</p>
                     <p>Pear</p>
@@ -76,7 +76,7 @@
 
         <div class="m-1 m-l-r">
             <a href="">
-                <img src="<?php echo base_url(); ?>asset/img/product/iconfinder_Kiwi_56021.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/img/product/iconfinder_Kiwi_56021.png" alt="">
                 <div class="text-center">
                     <p>Medium</p>
                     <p>Kiwi</p>

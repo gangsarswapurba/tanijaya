@@ -38,7 +38,7 @@
           <span class="alamat">jln petung, ruko timur kfc papringan <br />(sebelah indonotebook dan roglasses)</span>
         </div>
         <div class="cell small-12 medium-4 text-center">
-          <a class="" href="<?php echo base_url(); ?>"><img id="header-logo" src="<?php echo base_url(); ?>asset/img/logo.png" alt="" /></a>
+          <a class="" href="<?php echo base_url(); ?>"><img id="header-logo" src="<?php echo base_url(); ?>assets/img/logo.png" alt="" /></a>
         </div>
         <div class="cell small-12 medium-4 text-center">
           <span class="media-sosial"><span>Ikuti kami</span> <a href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></span>
@@ -69,10 +69,10 @@
       </div>
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-    <script src="<?php echo base_url(); ?>asset/js/vendor/jquery.js"></script>
-    <script src="<?php echo base_url(); ?>asset/js/vendor/what-input.js"></script>
-    <script src="<?php echo base_url(); ?>asset/js/vendor/foundation.js"></script>
-    <script src="<?php echo base_url(); ?>asset/js/app.js?as"></script>
+    <script src="<?php echo base_url(); ?>assets/js/vendor/jquery.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/vendor/what-input.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/vendor/foundation.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/app.js?as"></script>
     <script>
         $(document).foundation();
     </script>

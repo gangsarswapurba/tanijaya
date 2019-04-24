@@ -46,7 +46,7 @@
 
   <?php else: ?>
   <div class="cell medium-12 text-center not-found">
-    <img src="<?php echo base_url(); ?>asset/img/iconfinder_Scare_3713833.png" alt="not found">
+    <img src="<?php echo base_url(); ?>assets/img/iconfinder_Scare_3713833.png" alt="not found">
     <h4>anda belum memasukkan apa-apa</h4>
 </div>
   <?php endif; ?>
