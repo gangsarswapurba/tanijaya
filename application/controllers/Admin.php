@@ -33,6 +33,9 @@ class Admin extends CI_Controller {
 
 		$crud->set_field_upload('foto','assets/img/product');
 
+		$crud->display_as('id_kategori','Kategori');
+		$crud->set_relation('id_kategori','kategori','nama');
+
 		$output = $crud->render();
 
 		$this->_example_output($output);
