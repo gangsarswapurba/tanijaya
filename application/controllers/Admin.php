@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Pencarian extends CI_Controller {
+class Admin extends CI_Controller {
 
     /**
      * Index Page for this controller.
@@ -11,7 +11,7 @@ class Pencarian extends CI_Controller {
      *  - or -
      *      http://example.com/index.php/welcome/index
      *  - or -
-     * Since this controller is set as the default controller in
+     * Since this contredirect('auth/login');roller is set as the default controller in
      * config/routes.php, it's displayed at http://example.com/
      *
      * So any other public methods not prefixed with an underscore will
@@ -21,19 +21,12 @@ class Pencarian extends CI_Controller {
     public function index()
     {
 
-        $yang_dicari = $this->input->get('keyword');
-
-        $yang_dicari = html_escape($yang_dicari);
-
-        $data['yang_dicari'] = $yang_dicari;
-
-        $this->load->model('Produk_model');
-
-        $data['hasil_pencarian'] = $this->Produk_model->cari($yang_dicari);
+        if (!$this->ion_auth->logged_in())
+    		{
+          redirect('auth/login');
+    		}
 
         $this->load->view('header');
-
-        $this->load->view('hasil-pencarian', $data);
 
         $this->load->view('footer');
     }
