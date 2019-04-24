@@ -12,7 +12,34 @@ class Admin extends CI_Controller {
 		$this->load->view('example.php',(array)$output);
 	}
 
+	public function index()
+	{
+		redirect('admin/produk');
+	}
+
 	public function produk()
+	{
+		if (!$this->ion_auth->logged_in()) {
+
+      redirect('auth/login');
+    }
+
+		$crud = new grocery_CRUD();
+
+		$crud->set_table('produk');
+		$crud->set_subject('Produk');
+		$crud->unset_print();
+		$crud->unset_export();
+
+		$crud->set_field_upload('foto','assets/img/product');
+
+		$output = $crud->render();
+
+		$this->_example_output($output);
+
+	}
+
+	public function kategori()
 	{
 		if (!$this->ion_auth->logged_in())
     {
@@ -21,10 +48,12 @@ class Admin extends CI_Controller {
 
 		$crud = new grocery_CRUD();
 
-		$crud->set_table('produk');
-		$crud->set_subject('Produk');
+		$crud->set_table('kategori');
+		$crud->set_subject('Kategori');
+		$crud->unset_print();
+		$crud->unset_export();
 
-		$crud->set_field_upload('foto','assets/img/product');
+		$crud->set_field_upload('foto','assets/img/kategori');
 
 		$output = $crud->render();
 

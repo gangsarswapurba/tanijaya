@@ -313,3 +313,5 @@ switch (ENVIRONMENT)
  * And away we go...
  */
 require_once BASEPATH.'core/CodeIgniter.php';
+
+ini_set('display_errors',"On");

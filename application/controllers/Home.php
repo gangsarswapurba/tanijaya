@@ -20,7 +20,6 @@ class Home extends CI_Controller {
      */
     public function index()
     {
-
         $this->load->model('Kategori_model');
         $data['semua_kategori_produk'] = $this->Kategori_model->get_all();
 

@@ -10,11 +10,10 @@ foreach($css_files as $file): ?>
 </head>
 <body>
 	<div>
-		<a href='<?php echo site_url('')?>'>Home</a> |
-		<a href='<?php echo site_url('admin/produk')?>'>Produk</a> |
-		<a href='<?php echo site_url('admin/kategori')?>'>Kategori</a> |
-		<a href='<?php echo site_url('auth/logout')?>'>Logout</a>
-
+		<a href='<?php echo base_url() ?>'>Home</a> |
+		<a href='<?php echo base_url() ?>admin/produk'>Produk</a> |
+		<a href='<?php echo base_url() ?>admin/kategori'>Kategori</a> |
+		<a href='<?php echo base_url()?>auth/logout'>Logout</a>
 	</div>
 	<div style='height:20px;'></div>
     <div style="padding: 10px">
