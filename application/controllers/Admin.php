@@ -7,9 +7,9 @@ class Admin extends CI_Controller {
 		parent::__construct();
 	}
 
-	public function _example_output($output = null)
+	public function _admin_output($output = null)
 	{
-		$this->load->view('example.php',(array)$output);
+		$this->load->view('admin.php',(array)$output);
 	}
 
 	public function index()
@@ -38,7 +38,7 @@ class Admin extends CI_Controller {
 
 		$output = $crud->render();
 
-		$this->_example_output($output);
+		$this->_admin_output($output);
 
 	}
 
@@ -60,7 +60,7 @@ class Admin extends CI_Controller {
 
 		$output = $crud->render();
 
-		$this->_example_output($output);
+		$this->_admin_output($output);
 
 	}
 
