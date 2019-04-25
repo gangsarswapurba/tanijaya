@@ -9,7 +9,7 @@
   </div>
 
   <div style="text-align: center;">
-    <button class="button primary" onclick="window.location.replace('<?php  echo base_url(); ?>produkIn_kategori/tampil_produk');">Klik Kategori</button>
+    <a class="button primary" href="<?php echo base_url(); ?>produkkategori">Klik Kategori</a>
   </div>
 
 
