@@ -8,10 +8,6 @@
     </div>
   </div>
 
-  <div style="text-align: center;">
-    <a class="button primary" href="<?php echo base_url(); ?>produkkategori">Klik Kategori</a>
-  </div>
-
 
 
 <div class="grid-container contact">
