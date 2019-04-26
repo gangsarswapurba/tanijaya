@@ -27,6 +27,8 @@ class Produk extends CI_Controller {
 
 		$data['produk'] = $this->Produk_model->get_product_detail($id_produk);
 
+		$data['kategori'] = $this->Produk_model->get_category($id_produk);
+
 		$this->load->view('header');
 
 		$this->load->view('produk-favorit', $data);

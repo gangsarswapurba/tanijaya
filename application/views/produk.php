@@ -1,4 +1,7 @@
 <div class="grid-container produk">
+  <div class="grid-x text-left breadcrumb">
+    <a href="<?php echo base_url(); ?>"><span>Home</span></a><span class="pemisah"><ion-icon name="ios-arrow-forward"></ion-icon></span> <a href="<?php echo base_url(); ?>kategori/index/<?php echo $kategori['id']; ?>"><span><?php echo humanize($kategori['nama']); ?></span></a>
+  </div>
   <div class="grid-x">
     <div class="cell medium-6">
       <img class="foto-utama" src="<?php echo base_url(); ?>assets/img/product/<?php echo $produk['foto'] ?>" alt="">

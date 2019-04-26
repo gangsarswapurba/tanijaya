@@ -1,21 +1,21 @@
 <?php
- 
+
 class Produk_model extends CI_Model {
- 
+
         public function get_top_5_product()
         {
                 $this->db->limit(5);
                 $query = $this->db->get('produk');
                 return $query->result_array();
         }
- 
+
         public function get_product_detail($value)
         {
           $this->db->where('id', $value);
           $query = $this->db->get('produk');
           return $query->row_array();
         }
- 
+
         public function cari($value)
         {
           // $this->db->group_start();
@@ -27,5 +27,14 @@ class Produk_model extends CI_Model {
           $query = $this->db->get('produk');
           return $query->result_array();
         }
- 
+
+        public function get_category($product_id)
+        {
+          $this->db->select('kategori.nama, kategori.id');
+          $this->db->where('produk.id', $product_id);
+          $this->db->join('kategori', 'produk.id_kategori = kategori.id');
+          $query = $this->db->get('produk');
+          return $query->row_array();
+        }
+
 }
