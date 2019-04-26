@@ -9,6 +9,7 @@
 foreach($css_files as $file): ?>
 	<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
 <?php endforeach; ?>
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/admin.css">
 </head>
 <body>
 	<div>

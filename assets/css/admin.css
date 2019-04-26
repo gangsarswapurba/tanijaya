@@ -1,0 +1,71 @@
+body {
+  font-family: 'Muli';
+    background-color: #F9FAFF;
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+form#login {
+    background: #FFFFFF;
+    border: 1px solid #E4E6F2;
+    box-shadow: 0 2px 5px 0 rgba(50,52,57,0.11);
+    border-radius: 3px;
+    padding: 40px;
+}
+
+form#login #submit {
+    background: #42B549;
+    border-radius: 23.5px;
+    width: 300px;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Muli';
+    border: none;
+}
+
+#infoMessage {
+  margin-bottom: 30px;
+}
+
+#infoMessage p {
+    color: #f7565e;
+    line-height: 8px;
+    font-weight: 700;
+}
+
+form#login #email, form#login #password {
+   border: 1px solid #E4E6F2;
+   box-shadow: none;
+ }
+
+[type='text']:focus {
+  box-shadow: none;
+}
+
+.go-back-home {
+    margin-top: 32px;
+    margin-right: 24px;
+}
+
+.go-back-home ion-icon {
+    vertical-align: baseline;
+    font-size: 16px;
+    margin-bottom: -3px;
+}
+
+.go-back-home span {
+  font-family: 'Muli';
+font-size: 14px;
+color: #C6CBDE;
+}
+
+.go-back-home a, .go-back-home a span {
+  color: #4C7AF1;
+}
