@@ -23,7 +23,7 @@
     </div>
     <div class="grid-x">
       <div class="cell small-12">
-        <div class="wa text-center"><a class="button primary" href="https://wa.me/<?php echo $no_wa; ?>"><ion-icon name="logo-whatsapp"></ion-icon> <span>08<?php echo $no_wa; ?></span></a></div>
+        <div class="wa text-center"><a class="button primary" href="https://wa.me/<?php echo $no_wa; ?>"><ion-icon name="logo-whatsapp"></ion-icon> <span>0<?php echo $no_wa; ?></span></a></div>
       </div>
     </div>
   </div><!-- .contact -->
