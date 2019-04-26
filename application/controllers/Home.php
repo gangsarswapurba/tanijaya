@@ -26,6 +26,11 @@ class Home extends CI_Controller {
         $this->load->model('Produk_model');
         $data['lima_produk_favorit'] = $this->Produk_model->get_top_5_product();
 
+        $this->load->model('Pengaturan_model');
+        $data['no_wa'] = $this->Pengaturan_model->get_pengaturan('no_wa');
+  			$data['alamat'] = $this->Pengaturan_model->get_pengaturan('alamat');
+  			$data['ig'] = $this->Pengaturan_model->get_pengaturan('ig');
+
         $this->load->view('header');
 
         $this->load->view('produk-favorit', $data);
@@ -34,6 +39,6 @@ class Home extends CI_Controller {
 
         $this->load->view('kategori-produk', $data);
 
-        $this->load->view('footer');
+        $this->load->view('footer', $data);
     }
 }

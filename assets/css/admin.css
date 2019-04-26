@@ -45,8 +45,9 @@ form#login #email, form#login #password {
    box-shadow: none;
  }
 
-[type='text']:focus {
+[type='text']:focus, textarea:focus {
   box-shadow: none;
+  border: 1px solid #cacaca;
 }
 
 .go-back-home {
@@ -68,4 +69,36 @@ color: #C6CBDE;
 
 .go-back-home a, .go-back-home a span {
   color: #4C7AF1;
+}
+
+a, a:hover, a:focus, a:active {
+    /* color: #42B549; */
+}
+
+.button, .button:focus, .button:hover {
+  background-color: #42B549;
+}
+
+.input-group-label {
+    height: 39px;
+}
+
+#alamat {
+    height: 100px;
+}
+
+form#pengaturan {
+    padding: 40px;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    margin-top: 32px;
+}
+
+.submit-button {
+    text-align: right;
+}
+
+.logo-di-admin-pengaturan {
+    max-width: 100px;
+    margin-bottom: 14px;
 }

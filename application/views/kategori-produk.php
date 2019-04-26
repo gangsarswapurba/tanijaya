@@ -22,14 +22,14 @@
       </div>
     </div>
   </div>
-  
+
 <?php else: ?>
   <div class="grid-x kategori-produk kanan">
     <div class="cell medium-6">
       <div class="text">
         <h3 class=""><?php echo humanize($kategori_produk['nama']); ?></h3>
         <!-- <div class=""><a class="button primary" href="<?php echo base_url(); ?>category/index/<?php echo $kategori_produk['id'] ?>">SELENGKAPNYA</a></div> -->
-        <div class=""><a class="button primary" href="<?php echo base_url(); ?>produkkategori">SELENGKAPNYA</a></div> 
+        <div class=""><a class="button primary" href="<?php echo base_url(); ?>produkkategori">SELENGKAPNYA</a></div>
       </div>
     </div>
     <div class="cell medium-6">

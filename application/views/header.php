@@ -7,7 +7,7 @@
     <title>TANIJAYA - The Best Sayuran Marketplace In The World</title>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Mui:400:900|Playfair+Display:400,400i" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/foundation.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/foundation.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/app.css">
 </head>
 

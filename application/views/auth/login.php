@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>assets/img/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Mui:400:900|Playfair+Display:400,400i" rel="stylesheet">
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/foundation.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/foundation.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/admin.css">
 </head>
 <body>
@@ -62,10 +62,9 @@
 
 
 </body>
-<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/vendor/jquery.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/vendor/what-input.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/vendor/foundation.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/vendor/foundation.min.js"></script>
 <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/app.js?as"></script>
 <script>

@@ -23,7 +23,7 @@
     </div>
     <div class="grid-x">
       <div class="cell small-12">
-        <div class="wa text-center"><a class="button primary" href="https://wa.me/6281904191601"><ion-icon name="logo-whatsapp"></ion-icon> <span>0819-0419-1601</span></a></div>
+        <div class="wa text-center"><a class="button primary" href="https://wa.me/<?php echo $no_wa; ?>"><ion-icon name="logo-whatsapp"></ion-icon> <span>08<?php echo $no_wa; ?></span></a></div>
       </div>
     </div>
   </div><!-- .contact -->
@@ -31,13 +31,13 @@
   <div id="footer" class="grid-container full footer">
       <div class="grid-x">
         <div class="cell small-12 medium-4 text-center">
-          <span class="alamat">jln petung, ruko timur kfc papringan <br />(sebelah indonotebook dan roglasses)</span>
+          <span class="alamat"><?php echo nl2br($alamat); ?></span>
         </div>
         <div class="cell small-12 medium-4 text-center">
           <a class="" href="<?php echo base_url(); ?>"><img id="header-logo" src="<?php echo base_url(); ?>assets/img/logo.png" alt="" /></a>
         </div>
         <div class="cell small-12 medium-4 text-center">
-          <span class="media-sosial"><span>Ikuti kami</span> <a href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></span>
+          <span class="media-sosial"><span>Ikuti kami</span> <a href="https://instagram.com/<?php echo $ig; ?>"><ion-icon name="logo-instagram"></ion-icon></a></span>
         </div>
       </div>
     </div><!-- .footer -->
@@ -67,7 +67,7 @@
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/vendor/jquery.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/vendor/what-input.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/vendor/foundation.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/vendor/foundation.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/app.js?as"></script>
     <script>
         $(document).foundation();

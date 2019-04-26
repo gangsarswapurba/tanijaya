@@ -64,4 +64,31 @@ class Admin extends CI_Controller {
 
 	}
 
+	public function pengaturan()
+	{
+
+		if (!empty($this->input->post())) {
+
+				$data = array(
+					'no_wa' => $this->input->post('no_wa'),
+					'alamat' => $this->input->post('alamat'),
+				 	'ig' => $this->input->post('ig')
+        );
+
+				foreach ($data as $key => $value) {
+						$this->db->set('isi', $value);
+						$this->db->where('nama', $key);
+						$this->db->update('pengaturan');
+				}
+
+		} else {
+			$this->load->model('Pengaturan_model');
+			$data['no_wa'] = $this->Pengaturan_model->get_pengaturan('no_wa');
+			$data['alamat'] = $this->Pengaturan_model->get_pengaturan('alamat');
+			$data['ig'] = $this->Pengaturan_model->get_pengaturan('ig');
+		}
+
+		$this->load->view('pengaturan.php', $data);
+	}
+
 }

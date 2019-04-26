@@ -29,12 +29,17 @@ class Produk extends CI_Controller {
 
 		$data['kategori'] = $this->Produk_model->get_category($id_produk);
 
+		$this->load->model('Pengaturan_model');
+		$data['no_wa'] = $this->Pengaturan_model->get_pengaturan('no_wa');
+		$data['alamat'] = $this->Pengaturan_model->get_pengaturan('alamat');
+		$data['ig'] = $this->Pengaturan_model->get_pengaturan('ig');
+
 		$this->load->view('header');
 
 		$this->load->view('produk-favorit', $data);
 
 		$this->load->view('produk', $data);
 
-		$this->load->view('footer');
+		$this->load->view('footer', $data);
 	}
 }

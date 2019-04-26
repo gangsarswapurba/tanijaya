@@ -31,10 +31,15 @@ class Pencarian extends CI_Controller {
 
         $data['hasil_pencarian'] = $this->Produk_model->cari($yang_dicari);
 
+        $this->load->model('Pengaturan_model');
+        $data['no_wa'] = $this->Pengaturan_model->get_pengaturan('no_wa');
+  			$data['alamat'] = $this->Pengaturan_model->get_pengaturan('alamat');
+  			$data['ig'] = $this->Pengaturan_model->get_pengaturan('ig');
+
         $this->load->view('header');
 
         $this->load->view('hasil-pencarian', $data);
 
-        $this->load->view('footer');
+        $this->load->view('footer', $data);
     }
 }
