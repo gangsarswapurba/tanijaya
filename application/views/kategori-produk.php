@@ -12,13 +12,12 @@
 <?php if ( $kiri ): ?>
   <div class="grid-x kategori-produk kiri">
     <div class="cell medium-6">
-      <img class="foto" src="<?php echo base_url() ?>assets/img/kategori/<?php echo $kategori_produk['foto']; ?>" />
+      <a href="<?php echo base_url(); ?>kategori/index/<?php echo $kategori_produk['id'] ?>"><img class="foto" src="<?php echo base_url() ?>assets/img/kategori/<?php echo $kategori_produk['foto']; ?>" /></a>
     </div>
     <div class="cell medium-6">
       <div class="text">
-        <h3 class=""><?php echo humanize($kategori_produk['nama']); ?></h3>
-        <!-- <div class=""><a class="button primary" href="<?php echo base_url(); ?>category/index/<?php echo $kategori_produk['id'] ?>">SELENGKAPNYA</a></div> -->
-        <div class=""><a class="button primary" href="<?php echo base_url(); ?>produkkategori">SELENGKAPNYA</a></div>
+        <a href="<?php echo base_url(); ?>kategori/index/<?php echo $kategori_produk['id'] ?>"><h3 class=""><?php echo humanize($kategori_produk['nama']); ?></h3></a>
+        <div class=""><a class="button primary" href="<?php echo base_url(); ?>kategori/index/<?php echo $kategori_produk['id'] ?>">SELENGKAPNYA</a></div>
       </div>
     </div>
   </div>
@@ -27,13 +26,12 @@
   <div class="grid-x kategori-produk kanan">
     <div class="cell medium-6">
       <div class="text">
-        <h3 class=""><?php echo humanize($kategori_produk['nama']); ?></h3>
-        <!-- <div class=""><a class="button primary" href="<?php echo base_url(); ?>category/index/<?php echo $kategori_produk['id'] ?>">SELENGKAPNYA</a></div> -->
-        <div class=""><a class="button primary" href="<?php echo base_url(); ?>produkkategori">SELENGKAPNYA</a></div>
+        <a href="<?php echo base_url(); ?>kategori/index/<?php echo $kategori_produk['id'] ?>"><h3 class=""><?php echo humanize($kategori_produk['nama']); ?></h3></a>
+        <div class=""><a class="button primary" href="<?php echo base_url(); ?>kategori/index/<?php echo $kategori_produk['id'] ?>">SELENGKAPNYA</a></div>
       </div>
     </div>
     <div class="cell medium-6">
-      <img class="foto" src="<?php echo base_url() ?>assets/img/kategori/<?php echo $kategori_produk['foto']; ?>" />
+      <a href="<?php echo base_url(); ?>kategori/index/<?php echo $kategori_produk['id'] ?>"><img class="foto" src="<?php echo base_url() ?>assets/img/kategori/<?php echo $kategori_produk['foto']; ?>" /></a>
     </div>
   </div>
 <?php endif; ?>
