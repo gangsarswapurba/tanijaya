@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/form-foundation.min.css">
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/admin.css">
 </head>
-<body>
+<body class="pengaturan">
 
   <div class="grid-container fluid">
     <div class="grid-x">
@@ -24,6 +24,7 @@
           <a href='<?php echo base_url()?>auth/logout'>Logout</a>
         </div>
       </div>
+
     <div class="grid-x">
       <div class="cell medium-6">
 
@@ -75,8 +76,23 @@
 
       </p>
 
-  		<?php $attributes = array('class' => 'button', 'id' => 'submit'); ?>
-      <p class="submit-button"><?php echo form_submit('submit', 'Submit', $attributes);?></p>
+			<div class="grid-x">
+				<div class="cell medium-6">
+					<?php if (!empty($this->session->flashdata('setting_saved'))): ?>
+						<div id="infoMessage" class="text-center"><p><?php echo $this->session->flashdata('setting_saved');?></p></div>
+					<?php endif; ?>
+				</div>
+				<div class="cell medium-6">
+					<?php $attributes = array('class' => 'button', 'id' => 'submit'); ?>
+					<p class="submit-button">
+						<?php echo form_submit('submit', 'Submit', $attributes);?>
+					</p>
+				</div>
+
+			</div>
+
+
+
 
     <?php echo form_close();?>
 

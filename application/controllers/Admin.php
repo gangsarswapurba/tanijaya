@@ -81,6 +81,8 @@ class Admin extends CI_Controller {
 						$this->db->update('pengaturan');
 				}
 
+				$this->session->set_flashdata('setting_saved', 'Pengaturan berhasil disimpan.');
+
 		} else {
 			$this->load->model('Pengaturan_model');
 			$data['no_wa'] = $this->Pengaturan_model->get_pengaturan('no_wa');

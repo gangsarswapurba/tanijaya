@@ -102,3 +102,8 @@ form#pengaturan {
     max-width: 100px;
     margin-bottom: 14px;
 }
+
+body.pengaturan #infoMessage {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
