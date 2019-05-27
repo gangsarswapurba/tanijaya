@@ -11,5 +11,5 @@ Tani Jaya E-Commerce Project
 - Arwa Ulayya Haspriyanti (16121025)
 
 ## Credits
-Ion Auth http://benedmunds.com/ion_auth/
-Grocery Crud https://www.grocerycrud.com
+- Ion Auth http://benedmunds.com/ion_auth/
+- Grocery Crud https://www.grocerycrud.com 
