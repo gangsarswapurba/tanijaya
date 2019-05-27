@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Apr 30, 2019 at 06:39 AM
--- Server version: 10.2.23-MariaDB
--- PHP Version: 7.2.7
+-- Host: localhost
+-- Generation Time: May 27, 2019 at 06:27 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -84,32 +84,21 @@ CREATE TABLE `login_attempts` (
 --
 
 INSERT INTO `login_attempts` (`id`, `ip_address`, `login`, `time`) VALUES
-(18, '118.97.16.154', ' admin@tanijaya.com', 1556499351);
+(19, '::1', 'Tani Jaya', 1558930073),
+(20, '::1', 'admin', 1558930077);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `order`
+-- Table structure for table `pembeli`
 --
 
-CREATE TABLE `order` (
-  `id_order` int(11) NOT NULL,
-  `id_pemesan` int(11) NOT NULL,
-  `id_produk` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pemesan`
---
-
-CREATE TABLE `pemesan` (
-  `id_pemesan` int(11) NOT NULL,
-  `nama_pemesan` varchar(230) NOT NULL,
-  `no_hp` int(11) NOT NULL,
-  `alamat_pemesan` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE `pembeli` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(128) NOT NULL,
+  `alamat` text NOT NULL,
+  `no_hp` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -131,6 +120,20 @@ INSERT INTO `pengaturan` (`id`, `nama`, `isi`) VALUES
 (1, 'no_wa', '823929388421'),
 (2, 'alamat', 'Jl. Jembatan Merah No. 84C Gejayan, \r\nJakarta 55283'),
 (3, 'ig', 'bungamatahari');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pesanan`
+--
+
+CREATE TABLE `pesanan` (
+  `id` int(11) NOT NULL,
+  `id_produk` int(11) NOT NULL,
+  `qty` int(11) NOT NULL,
+  `subtotal` int(11) NOT NULL,
+  `id_pembeli` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -232,7 +235,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `email`, `activation_selector`, `activation_code`, `forgotten_password_selector`, `forgotten_password_code`, `forgotten_password_time`, `remember_selector`, `remember_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`) VALUES
 (1, '127.0.0.1', 'administrator', '$2y$12$sh1YJv5hm9ft.LZTJaTHqOUKDJ79l3ZPmdGNahjRKeoFIKpMD0Aum', 'admin@admin.com', NULL, '', NULL, NULL, NULL, NULL, NULL, 1268889823, 1556130457, 1, 'Admin', 'istrator', 'ADMIN', '0'),
-(2, '36.84.0.43', 'admin@tanijaya.com', '$2y$10$q8NF2T0Sx4gQe7ClMf9edey3KXByWIlVxQ2PRCQIxhgdtx3oG4ka2', 'admin@tanijaya.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1556130524, 1556566733, 1, 'Tani', 'Jaya', 'Tani Jaya', '');
+(2, '36.84.0.43', 'admin@tanijaya.com', '$2y$10$q8NF2T0Sx4gQe7ClMf9edey3KXByWIlVxQ2PRCQIxhgdtx3oG4ka2', 'admin@tanijaya.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1556130524, 1558930134, 1, 'Tani', 'Jaya', 'Tani Jaya', '');
 
 -- --------------------------------------------------------
 
@@ -278,21 +281,21 @@ ALTER TABLE `login_attempts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `order`
+-- Indexes for table `pembeli`
 --
-ALTER TABLE `order`
-  ADD PRIMARY KEY (`id_order`);
-
---
--- Indexes for table `pemesan`
---
-ALTER TABLE `pemesan`
-  ADD PRIMARY KEY (`id_pemesan`);
+ALTER TABLE `pembeli`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `pengaturan`
 --
 ALTER TABLE `pengaturan`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pesanan`
+--
+ALTER TABLE `pesanan`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -347,19 +350,25 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `login_attempts`
 --
 ALTER TABLE `login_attempts`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT for table `pemesan`
+-- AUTO_INCREMENT for table `pembeli`
 --
-ALTER TABLE `pemesan`
-  MODIFY `id_pemesan` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `pembeli`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `pengaturan`
 --
 ALTER TABLE `pengaturan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `pesanan`
+--
+ALTER TABLE `pesanan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `produk`
