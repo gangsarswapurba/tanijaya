@@ -17,6 +17,57 @@ class Admin extends CI_Controller {
 		redirect('admin/produk');
 	}
 
+	public function pesanan()
+	{
+		if (!$this->ion_auth->logged_in()) {
+
+      redirect('auth/login');
+    }
+
+		$crud = new grocery_CRUD();
+
+		$crud->set_table('pesanan');
+		$crud->set_subject('Pesanan');
+		$crud->unset_print();
+		$crud->unset_export();
+
+		$crud->display_as('id_produk','Produk');
+		$crud->display_as('qty','Jumlah');
+		$crud->display_as('id_pembeli','Pembeli');
+		$crud->set_relation('id_produk','produk','{nama} {kota}');
+		$crud->set_relation('id_pembeli','pembeli','nama');
+
+		$output = $crud->render();
+
+		$this->_admin_output($output);
+
+	}
+
+	public function pembeli()
+	{
+		if (!$this->ion_auth->logged_in()) {
+
+      redirect('auth/login');
+    }
+
+		$crud = new grocery_CRUD();
+
+		$crud->set_table('pembeli');
+		$crud->set_subject('Pembeli');
+		$crud->unset_print();
+		$crud->unset_export();
+
+		// $crud->display_as('id_produk','Produk');
+		// $crud->display_as('qty','Jumlah');
+		// $crud->display_as('id_pembeli','ID Pembeli');
+		// $crud->set_relation('id_produk','produk','nama');
+
+		$output = $crud->render();
+
+		$this->_admin_output($output);
+
+	}
+
 	public function produk()
 	{
 		if (!$this->ion_auth->logged_in()) {

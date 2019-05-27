@@ -15,6 +15,8 @@ foreach($css_files as $file): ?>
 <body>
 	<div>
 		<a href='<?php echo base_url() ?>'>Home</a> |
+		<a href='<?php echo base_url() ?>admin/pesanan'>Pesanan</a> |
+		<a href='<?php echo base_url() ?>admin/pembeli'>Pembeli</a> |
 		<a href='<?php echo base_url() ?>admin/produk'>Produk</a> |
 		<a href='<?php echo base_url() ?>admin/kategori'>Kategori</a> |
 		<a href='<?php echo base_url() ?>admin/pengaturan'>Pengaturan</a> |
