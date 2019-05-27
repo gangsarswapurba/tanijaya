@@ -41,7 +41,7 @@
 </table>
 
 <div class="cell medium-12 text-center hitung-total">
-  <button class="button primary" type="button" name="button">HITUNG TOTAL</button>
+  <a href="<?php echo base_url(); ?>checkout" class="button primary">CHECKOUT</a>
 </div>
 
   <?php else: ?>
