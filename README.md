@@ -9,3 +9,7 @@ Tani Jaya E-Commerce Project
 - Gunartatik Esthiningtyas (16121023)
 - Yusuf Aji Wiryanto (16121052)
 - Arwa Ulayya Haspriyanti (16121025)
+
+## Credits
+Ion Auth http://benedmunds.com/ion_auth/
+Grocery Crud https://www.grocerycrud.com
