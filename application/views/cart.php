@@ -2,19 +2,18 @@
 
   <h2>Pesanan anda</h2>
 
-  <?php if($this->cart->contents()): ?>
+  <?php if (!empty($this->cart->contents())): ?>
 
   <table cellpadding="6" cellspacing="1" style="width:100%" border="0">
 
 <?php $i = 1; ?>
-
 <?php foreach ($this->cart->contents() as $items): ?>
 
         <?php echo form_hidden($i.'[rowid]', $items['rowid']); ?>
 
         <tr>
                 <td class="foto"><a href="<?php echo base_url(); ?>produk/index/<?php echo $items['id']; ?>"><img src="<?php echo base_url(); ?>assets/img/product/<?php echo $items['foto'] ?>" alt=""></a></td>
-                <td class="nama">
+                <td class="nama"> 
                         <?php echo $items['name'] . ' ' . $items['kota'] . ' (' . $items['per'] . $items['satuan'] . ')'; ?>
 
                         <?php if ($this->cart->has_options($items['rowid']) == TRUE): ?>
@@ -31,12 +30,11 @@
 
                 </td>
                 <td class="qty"><span class="qty-text">QTY:</span> <?php echo form_input(array('type' => 'number', 'name' => $i.'[qty]', 'value' => $items['qty'], 'maxlength' => '3', 'size' => '5')); ?></td>
-                <td>Rp<?php echo $this->cart->format_number($items['price']); ?></td>
+                <td class="price">Rp. <?php echo $this->cart->format_number($items['price']*$items['qty']); ?></td>
                 <td class="keluarkan"><a href="<?php echo base_url(); ?>keranjang/keluarkan/<?php echo $items['rowid'] ?>"><ion-icon name="close-circle-outline"></ion-icon></a></td>
         </tr>
 
 <?php $i++; ?>
-
 <?php endforeach; ?>
 
 </table>
