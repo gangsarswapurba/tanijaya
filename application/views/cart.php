@@ -31,6 +31,7 @@
 
                 </td>
                 <td class="qty"><span class="qty-text">QTY:</span> <?php echo form_input(array('type' => 'number', 'name' => $i.'[qty]', 'value' => $items['qty'], 'maxlength' => '3', 'size' => '5')); ?></td>
+                <td><?php echo $this->cart->format_number($items['price']); ?></td>
                 <td class="keluarkan"><a href="<?php echo base_url(); ?>keranjang/keluarkan/<?php echo $items['rowid'] ?>"><ion-icon name="close-circle-outline"></ion-icon></a></td>
         </tr>
 
