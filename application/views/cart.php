@@ -37,6 +37,9 @@
 <?php $i++; ?>
 <?php endforeach; ?>
 
+<tr>
+  <td colspan="3"></td>
+  <td><?php echo $this->cart->total();?></td></tr>
 </table>
 
 <div class="cell medium-12 text-center hitung-total">
