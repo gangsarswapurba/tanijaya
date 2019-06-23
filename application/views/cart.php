@@ -2,7 +2,7 @@
 
   <h2>Pesanan anda</h2>
 
-  <?php if (!empty($this->cart->contents())): ?>
+  <?php if ($this->cart->contents()): ?>
 
   <table cellpadding="6" cellspacing="1" style="width:100%" border="0">
 
