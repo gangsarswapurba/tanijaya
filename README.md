@@ -13,3 +13,5 @@ Tani Jaya E-Commerce Project
 ## Credits
 - Ion Auth http://benedmunds.com/ion_auth/
 - Grocery Crud https://www.grocerycrud.com 
+- Zurb Foundation https://foundation.zurb.com 
+- Code Igniter https://www.codeigniter.com 
