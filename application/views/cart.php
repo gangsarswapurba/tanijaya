@@ -39,7 +39,7 @@
 
 <tr>
   <td colspan="3"></td>
-  <td><?php echo $this->cart->total();?></td></tr>
+   <td>Rp. <?php echo $this->cart->format_number($this->cart->total());?></td></tr>
 </table>
 
 <div class="cell medium-12 text-center hitung-total">
