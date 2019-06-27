@@ -606,7 +606,28 @@ span.qty-text {
 .fruit-container{
     max-width: 910px;
     margin: 0 auto;
+}
 
+.category-inner .cell .kota{
+    font-size: 0.875rem;
+    line-height: 1.643;
+    font-weight: 600;
+}
+
+.category-inner .cell .harga{
+    font-size: 1.4rem;
+    line-height: 0.636;
+    font-weight: 600;
+    padding: 0.6rem;
+    background-color: #6ab83a;
+    color: #fff;
+}
+
+.category-inner .cell .nama{
+    font-size: 1.438rem;
+    line-height: 1.652;
+    font-weight: 600;
+    color: #6ab83a;
 }
 
 #bayar {

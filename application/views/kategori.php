@@ -2,7 +2,7 @@
 
   <h1 class="text-center"><?php echo humanize($kategori['nama']); ?></h1>
 
-  <div class="grid-x">
+  <div class="grid-x category-inner">
     <?php if (!empty($produk_produk)): ?>
       <?php foreach ($produk_produk as $key => $produk): ?>
         <div class="cell medium-3">
