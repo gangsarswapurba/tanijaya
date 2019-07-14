@@ -144,4 +144,35 @@ class Admin extends CI_Controller {
 		$this->load->view('pengaturan.php', $data);
 	}
 
+	public function banner()
+	{
+
+		if ($this->input->post()) {
+			$config['upload_path']          = 'assets/img/banner';
+			$config['allowed_types']        = 'gif|jpg|jpeg|png';
+			$config['overwrite']          			= 'true';
+
+			$this->load->library('upload', $config);
+
+			if ($this->upload->do_upload('banner')) {
+				$this->load->model('Pengaturan_model');
+				$this->Pengaturan_model->ubah_banner($this->upload->data('file_name'));
+			}
+		}
+
+		if ($this->input->post('banner_url')) {
+			$this->load->model('Pengaturan_model');
+			$this->Pengaturan_model->ubah_banner_url($this->input->post('banner_url'));
+		}
+
+		$this->load->model('Pengaturan_model');
+		$data['banner'] = $this->Pengaturan_model->get_banner();
+		$data['banner_url'] = $this->Pengaturan_model->get_banner_url();
+
+		// print_r($data['banner_url']);
+
+		$this->load->view('admin_banner', $data);
+	}
+
+
 }

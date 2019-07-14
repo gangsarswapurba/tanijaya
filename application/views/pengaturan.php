@@ -16,12 +16,17 @@
 
   <div class="grid-container fluid">
     <div class="grid-x">
-      <div class="cell medium-12">
-          <a href='<?php echo base_url() ?>'>Home</a> |
-          <a href='<?php echo base_url() ?>admin/produk'>Produk</a> |
-          <a href='<?php echo base_url() ?>admin/kategori'>Kategori</a> |
-          <a href='<?php echo base_url() ?>admin/pengaturan'>Pengaturan</a> |
-          <a href='<?php echo base_url()?>auth/logout'>Logout</a>
+      <div class="cell medium-12 admin-menu">
+				<a href='<?php echo base_url() ?>'>Home</a> |
+				<a href='<?php echo base_url() ?>admin/pesanan'>Pesanan</a> |
+				<a href='<?php echo base_url() ?>admin/pembeli'>Pembeli</a> |
+				<a href='<?php echo base_url() ?>admin/produk'>Produk</a> |
+				<a href='<?php echo base_url() ?>admin/kategori'>Kategori</a> |
+				<a href='<?php echo base_url() ?>admin/pengaturan'>Pengaturan</a> |
+				<a href='<?php echo base_url() ?>admin/banner'>Banner</a> |
+				<a href='https://dashboard.tawk.to' target="_blank">Chat</a> |
+				<a href='https://login.mailchimp.com' target="_blank">Newsletter</a> |
+				<a href='<?php echo base_url()?>auth/logout'>Logout</a>
         </div>
       </div>
 

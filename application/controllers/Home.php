@@ -31,6 +31,10 @@ class Home extends CI_Controller {
   			$data['alamat'] = $this->Pengaturan_model->get_pengaturan('alamat');
   			$data['ig'] = $this->Pengaturan_model->get_pengaturan('ig');
 
+    		$this->load->model('Pengaturan_model');
+    		$data['banner'] = $this->Pengaturan_model->get_banner();
+        $data['banner_url'] = $this->Pengaturan_model->get_banner_url();
+
         $this->load->view('header');
 
         $this->load->view('produk-favorit', $data);

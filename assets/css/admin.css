@@ -107,3 +107,12 @@ body.pengaturan #infoMessage {
     margin-top: 30px;
     margin-bottom: 0;
 }
+
+.admin-menu {
+    color: #1779ba;
+    padding: 12px;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px 0 rgba(50, 54, 72, .5);
+}
