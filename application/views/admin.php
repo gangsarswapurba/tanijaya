@@ -14,7 +14,7 @@ foreach($css_files as $file): ?>
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/admin.css">
 </head>
 <body>
-	<div class="admin-menu"> 
+	<div class="admin-menu">
 		<a href='<?php echo base_url() ?>'>Home</a> |
 		<a href='<?php echo base_url() ?>admin/pesanan'>Pesanan</a> |
 		<a href='<?php echo base_url() ?>admin/pembeli'>Pembeli</a> |
@@ -23,7 +23,6 @@ foreach($css_files as $file): ?>
 		<a href='<?php echo base_url() ?>admin/pengaturan'>Pengaturan</a> |
 		<a href='<?php echo base_url() ?>admin/banner'>Banner</a> |
 		<a href='https://dashboard.tawk.to' target="_blank">Chat</a> |
-		<a href='https://login.mailchimp.com' target="_blank">Newsletter</a> |
 		<a href='<?php echo base_url()?>auth/logout'>Logout</a>
 	</div>
 	<div style='height:20px;'></div>

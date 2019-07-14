@@ -19,7 +19,6 @@
 		<a href='<?php echo base_url() ?>admin/pengaturan'>Pengaturan</a> |
 		<a href='<?php echo base_url() ?>admin/banner'>Banner</a> |
 		<a href='https://dashboard.tawk.to' target="_blank">Chat</a> |
-		<a href='https://login.mailchimp.com' target="_blank">Newsletter</a> |
 		<a href='<?php echo base_url()?>auth/logout'>Logout</a>
 	</div>
 	<div style='height:20px;'></div>
